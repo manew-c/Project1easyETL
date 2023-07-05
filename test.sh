@@ -6,7 +6,7 @@ echo "Extracting data"
 cut -d":" -f1,3,6 /etc/passwd > extracted-data.txt
 
 #tranform : เป็น ,
-#tr มาใส่ไฟล์ transformed-data.csvP
+#tr มาใส่ไฟล์ transformed-data.csv
 echo "Transforming data"
 tr ":" "," < extracted-data.txt > transformed-data.csv
 
